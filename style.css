@@ -156,3 +156,30 @@ footer {
     transform: translateY(-3px);
 }
 
+.efeito-digitar {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 0;
+    overflow: hidden; 
+    border-right: 3px solid #e458d8;
+    white-space: nowrap; 
+    letter-spacing: 1px;
+    margin: 0 auto; 
+    
+    animation: 
+        digitar 3.5s steps(45, end), 
+        cursor .75s step-end infinite;
+    
+    display: inline-block; 
+}
+
+@keyframes digitar {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes cursor {
+    from, to { border-color: transparent }
+    50% { border-color: #e458d8 }
+}
