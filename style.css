@@ -168,7 +168,7 @@ footer {
     margin: 0 auto; 
     
     animation: 
-        digitar 3.5s steps(45, end), 
+        digitar 3.5s steps(43, end), 
         cursor .75s step-end infinite;
     
     display: inline-block; 
@@ -176,7 +176,7 @@ footer {
 
 @keyframes digitar {
     from { width: 0 }
-    to { width: 100% }
+    to { width: 100%}
 }
 
 @keyframes cursor {
